@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Arcade Game">
+  <!-- The following tag sets the title for a webpage. -->
+  <title>Effective JavaScript: Frogger</title>
+  <!-- The following tag is links the external CSS file. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- The following tag sets the icon for a web page. -->
+  <link rel="icon" href="./images/icon.png">
+  <!-- The following tag makes a webpage to be responsive. -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <!-- The following divison is for, to be displayed when player lose the game. -->
+  <div class="Modallose">
+    <div class="Modalcontentlose">
+      <img class="lostimg" src="./images/lost.jpg" alt="Lost image">
+      <p class="textlose"></p>
+      <button class="playagain" name="button">Try again!</button>
+    </div>
+  </div>
+  <!-- The following division is for, to be displayed when player wins the game. -->
+  <div class="Modalwin">
+    <div class="Modalcontentwin">
+      <button  class="closewin">&times;</button>
+      <p class="textwin"></p>
+      <button class="playagain1" name="button">Play again</button>
+    </div>
+  </div>
+  <!-- Linking all the java script files used. -->
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+
+</html>
