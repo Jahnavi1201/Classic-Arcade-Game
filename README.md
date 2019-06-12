@@ -43,7 +43,7 @@ The folders used in this project are **css, images ,js, sounds**. The files used
 - Grass area, stone area and water area is considered in a canvas.
 - Initially, `Player` will be in grass area.
 - `Player` has to reach the water area by crossing the bugs without collision which randomly move on stone area.
-- A timer will be started when player strikes key for the first time after loading the game.
+- A timer will be started when the game is loaded.
 - If `Player` collide a bug, a pop-up window is displayed which consist "Try Again" button.
 - If the `Player` reaches water area(destiny) with out colliding bugs, then a pop-up window is displayed which provides time taken and a "Play Again" button.
 
@@ -51,13 +51,14 @@ The folders used in this project are **css, images ,js, sounds**. The files used
 
 ## How to load the game?
 
+```
 After downloading the scratch project, unzip the folder and open "index.html" in a web browser. Initially, there will be some errors. So, debug the game, that is, remove the errors by changing the code where it is required, in order to have a look at the static version of game.
+```
 
 --------------------------------------------------------------------------------
 
 ## How to play?
 
-```
 1.The player has to move the sprite in order to cross the bugs and reach destiny using "arrow keys".  
 - **Right Arrow** is for moving the sprite in the right direction.
 - **Left Arrow** is for moving the sprite in the left direction.
@@ -65,7 +66,6 @@ After downloading the scratch project, unzip the folder and open "index.html" in
 - **Down Arrow** is for moving the sprite in the backward direction.
 2.If player has lost the game and wants to try it again, then he/she has to press the "Try Again" button.
 3.If player has won the game and wants to play again, he/she has to press the "play again" button.
-```
 
 --------------------------------------------------------------------------------
 
@@ -97,7 +97,7 @@ _The view of window that will be displayed when player lose the game:_
 
 6.Then,I have defined **Enemy.prototype.update** function for updating the positions of enemies.
 
-7.Next,I have defined **Player.prototype.handleInput** which handles, in which direction and how much distance the player has to move when a specific key is pressed using "switch case"."Timer" is also handled in this function.
+7.Next,I have defined **Player.prototype.handleInput** which handles, in which direction and how much distance the player has to move when a specific key is pressed using "switch case".
 
 8.Then, an event listener is added to listen for key presses and send the keys to "Player.handleInput()" method.
 
@@ -110,6 +110,8 @@ _The view of window that will be displayed when player lose the game:_
 12.Then,a HTML division is designed using css which is made to display when `Player` collide a bug. This division consists of "Try Again" button.
 
 13.Next,another HTML division is designed using CSS whick is made to display when `Player` cross the bugs without collision with bugs.This division consists of time taken, "Play again" button and a "close" button.
+
+14.Timer is handled in **time()** function.
 
 --------------------------------------------------------------------------------
 
